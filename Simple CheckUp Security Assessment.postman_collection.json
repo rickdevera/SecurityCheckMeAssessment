@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "fbbafaa1-97a1-4142-8964-07abe3082345",
+		"name": "Simple CheckUp Security Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DLP Test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "post_data",
+							"value": "4580-0000-0000-0000, 5500 0000 0000 0004, 4024 0071 0007 2775, 4024007117885730, 4024007186169115",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://www.cpcheckme.com/check/testsAssets/post.html\n",
+					"protocol": "http",
+					"host": [
+						"www",
+						"cpcheckme",
+						"com"
+					],
+					"path": [
+						"check",
+						"testsAssets",
+						"post.html\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Anonymous",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://proxy.my-addr.com/favicon.ico",
+					"protocol": "http",
+					"host": [
+						"proxy",
+						"my-addr",
+						"com"
+					],
+					"path": [
+						"favicon.ico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Phishing",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.fkiinqdfc9un.xyz/login/assets/img/fav.ico",
+					"protocol": "http",
+					"host": [
+						"www",
+						"fkiinqdfc9un",
+						"xyz"
+					],
+					"path": [
+						"login",
+						"assets",
+						"img",
+						"fav.ico"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Zero Day 1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Malware Test - e.txt",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "http://s3-eu-west-1.amazonaws.com/cp-chk-files/e.txt"
+			},
+			"response": []
+		},
+		{
+			"name": "Malware Test - e.zip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "https://s3-eu-west-1.amazonaws.com/cp-chk-files/e.zip"
+			},
+			"response": []
+		},
+		{
+			"name": "Malware Test - IPS blade test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "D-Link 850L Router Remote Unauthenticated Information Disclosure\r\n\r\nIPS protection"
+			},
+			"response": []
+		},
+		{
+			"name": "C & C communcation Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				},
+				"description": "http://www.cpcheckme.com/check/testsAssets/post.html\r\n\r\nreditcard=1234&expyear=2017&ccv=123&pin=1234"
+			},
+			"response": []
+		},
+		{
+			"name": "DLP Test - Credit Card",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DLP Test - Credit Card Copy - HTTPS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
